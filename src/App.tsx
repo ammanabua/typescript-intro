@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import List from './components/List'
+import AddToList from './components/AddToList';
 
-interface IState {
+export interface IState {
   players: {
     name: string,
     age: number,
@@ -31,6 +32,7 @@ function App() {
         My Favorite Basketball Players
       </h1>
       <List players={players} />
+      <AddToList players={players} setPlayers={setPlayers} />
     </div>
   );
 }
