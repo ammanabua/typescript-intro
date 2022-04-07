@@ -14,7 +14,14 @@ interface IState {
 
 function App() {
 
-  const [players, setPlayers] = useState<IState["players"]>([])
+  const [players, setPlayers] = useState<IState["players"]>([
+    {
+      name: "LaMelo Ball",
+      url: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432816.png&w=350&h=254",
+      age: 21,
+      note: "Youngest youngin to come in the NBA styling & saucing"
+    }
+  ])
 
   
 
